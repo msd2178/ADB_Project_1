@@ -14,7 +14,7 @@ print precision
 
 bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27gates%27&$top=10&$format=Json'
 #Provide your account key here
-accountKey = ''
+accountKey = 'Amj5zEym/93UZqhYv2TvvO9pgzU1mcewT7NNWAm9JMY'
 
 accountKeyEnc = base64.b64encode(accountKey + ':' + accountKey)
 headers = {'Authorization': 'Basic ' + accountKeyEnc}
