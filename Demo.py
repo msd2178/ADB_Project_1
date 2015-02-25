@@ -4,13 +4,14 @@ import urllib2
 import base64
 import json
 
+relevance_count = 0.0
 query = raw_input("Enter the list of query words").split(" ")
 print query
 #print type(query)
 
-precision = float (raw_input("Enter the precision desired"))
-print precision
-#print type(precision)
+desired_precision = float (raw_input("Enter the precision desired"))
+print desired_precision
+#print type(desired_precision)
 
 bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27gates%27&$top=10&$format=Json'
 #Provide your account key here
@@ -35,4 +36,11 @@ for x in range(0,l):
     print "Title is :", json_obj['d']['results'][x]['Title']
     print "Description is : ", json_obj['d']['results'][x]['Description']
     print "URL is : ", json_obj['d']['results'][x]['Url']
-    print
+    ans = raw_input("Is it relevant? (y/n)")
+    if ans == 'y':
+        relevance_count += 1
+
+print relevance_count
+
+precision = relevance_count/10.0
+print precision
