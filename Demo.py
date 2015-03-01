@@ -5,22 +5,20 @@ import Weights
 import base64
 import re
 import json
+import MyRocchio
 from porter2 import stem
 
 def cleanData(str):
         newStr = re.sub(ur"[\,\|\-\?\[\]\{\}\(\)\"\:\;\!\@\#\$\ %\^\&\*\>\<]|(\.$)|(\.\.\.)", ' ', str)
         wordsList = newStr.lower().split()
-        #print wordsList
         newWordList = []
         for eachWord in wordsList:
             if eachWord not in cachedStopWords:
                 newWordList.append(eachWord)
-        #print newWordList
-        newerWordList = []
-        for eachWord in newWordList:
-            newerWordList.append(stem(eachWord))
-        #print newerWordList
-        return newerWordList
+        # newerWordList = []
+        # for eachWord in newWordList:
+        #     newerWordList.append(stem(eachWord))
+        return newWordList
 
 cachedStopWords = ['a', 'able', 'about', 'across', 'after', 'all', 'almost', 'also', 'am', 'among', 'an',
                   'and', 'any', 'are', 'as', 'at', 'be', 'because', 'been', 'but', 'by', 'can', 'cannot',
@@ -36,19 +34,19 @@ cachedStopWords = ['a', 'able', 'about', 'across', 'after', 'all', 'almost', 'al
 objectList =[]
 relevance_count = 0.0
 query = raw_input("Enter the list of query words").split(" ")
-print query
+print(query)
 queryList = ""
-#print type(query)   #list
+#print( type(query)   #list
 l = len(query)
 for q in query:
     queryList += '&Query=%27' + q # CHECK QUERY FOR 1ST PARAMETER
-#print queryList
+print( queryList)
 desired_precision = float (raw_input("Enter the precision desired"))
-print desired_precision
-#print type(desired_precision)
+print( desired_precision)
+#print( type(desired_precision)
 
 bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27'+ queryList +'%27&$top=10&$format=Json'
-print bingUrl
+print( bingUrl)
 #Provide your account key here
 accountKey = ''
 
@@ -58,41 +56,48 @@ req = urllib2.Request(bingUrl, headers = headers)
 response = urllib2.urlopen(req)
 #content = response.read()
 #content contains the xml/json response from Bing.
-#print content
-#print type(content)
+#print( content
+#print( type(content)
 json_obj = json.load(response)
 result_list = json_obj['d']['results']
-#print json_obj
-#print type(json_obj)
-#print "dict['Name']: ", dict['Name'];
+#print( json_obj
+#print( type(json_obj)
+#print( "dict['Name']: ", dict['Name'];
 l=  len(result_list)
-print l
+print( l)
 for x in range(0,l):
-    print "The entry number", x+1, "is :"
-    print "Title is :", result_list[x]['Title']
-    print "Description is : ", result_list[x]['Description']
-    print "URL is : ", result_list[x]['Url']
+    result_list[x]['Relevant'] = False
+    print( "The entry number", x+1, "is :")
+    print( "Title is :", result_list[x]['Title'])
+    print( "Description is : ", result_list[x]['Description'])
+    print( "URL is : ", result_list[x]['Url'])
     ans = raw_input("Is it relevant? (y/n)")
     if ans == 'y':
         relevance_count += 1
+        result_list[x]['Relevant'] = True
     Clean_title = cleanData(result_list[x]['Title'])
     Clean_description = cleanData(result_list[x]['Description'])
-    object = [Clean_title, Clean_description]
+    Relevant = result_list[x]['Relevant']
+    object = [Clean_title, Clean_description, Relevant]
     objectList.append(object)
-    print 'Clean_title is : ', ', '.join(Clean_title)
-    print 'Clean_description is : ', ', '.join(Clean_description)
-    print objectList
-    print type(objectList)
+    print( 'Clean_title is : ', ', '.join(Clean_title))
+    print( 'Clean_description is : ', ', '.join(Clean_description))
+    print( objectList)
+    print( type(objectList))
     #object.title = Clean_title
     #object.description = Clean_description
-    #print object
+    #print( object
 
 
-print relevance_count
+print(relevance_count)
 
 precision = relevance_count/10.0
-print precision
+print( precision)
 
-print "==============CALLING WEIGHTS FUNCTION =============="
-obj = Weights.Weights()
-obj.Weight(objectList)
+print( "==============CALLING WEIGHTS FUNCTION ==============")
+if (precision < desired_precision):
+    obj = Weights.Weights()
+    (terms, weights) = obj.Weight(objectList)
+    rocObject = MyRocchio.Rocchio()
+    newQuery= rocObject.RocchioExpansion(query,objectList, terms, weights)
+    print(newQuery)

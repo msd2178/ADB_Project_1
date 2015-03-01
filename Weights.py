@@ -60,10 +60,10 @@ class Weights:
             sum = math.sqrt(sum)
             for t in self.words:
                 self.desVector[i][t] /= sum
-        print 'self.words is : ', ', '.join(self.words)
-        #print type(self.words)
-        print "=============================="
-        print "WeightV values are: "
-        print self.WeightV
-        #print type(self.WeightV)
+        print('self.words is : ', ', '.join(self.words))
+        print(type(self.words))
+        print("==============================")
+        print("WeightV values are: ")
+        print(self.WeightV)
+        print(type(self.WeightV))
         return (self.words, self.WeightV)
