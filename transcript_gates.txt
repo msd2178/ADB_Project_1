@@ -1,0 +1,246 @@
+Enter the list of query words :gates
+Enter the precision desired (between 0 and 1): 0.9
+ROUND 1:
+
+
+=============================================================
+Title: Gates Corporation
+Description: Gates Corporation is Powering ProgressΓäó in the Oil & Gas, Energy,
+ Mining, Marine, Agriculture, Transportation and Automotive Industries.
+URL: http://www.gates.com/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Gates Bar B.Q.
+Description: With the tantalizing hickory barbecue smell drawing the customer th
+rough the ranch-style doors, he is immediately greeted.
+URL: http://www.gatesbbq.com/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Bill & Melinda Gates Foundation
+Description: The Gates FoundationΓÇÖs effort to eradicate polio offers the chanc
+e to protect millions of children from paralysis forever.
+URL: http://www.gatesfoundation.org/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates - Wikipedia, the free encyclopedia
+Description: William Henry "Bill" Gates III (born October 28, 1955) is an Americ
+an business magnate, philanthropist, investor, computer programmer, and inventor
+. Gates originally ...
+URL: http://en.wikipedia.org/wiki/Bill_Gates
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Amazon.com: gates
+Description: Product Description... Easy Open Extra Wide Safety Gate boasts 100
+percent steel ...
+URL: http://www.amazon.com/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3Agates
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Driveway Gates | Automatic Gates | Electric Gates
+Description: Driveway Gates - Automatic Gates The high-quality driveway gates fr
+om GateCrafters.com come in a wide variety of options to ...
+URL: http://www.gatecrafters.com/design_your_gates.aspx
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Gates Automotive Aftermarket Solutions | Gates Corporation
+Description: Gates offers a complete line of original equipment (OE) automotive
+aftermarket products and solutions, including automotive hose, belts, & accessor
+ies.
+URL: http://www.gates.com/industries/automotive
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: The world's most trusted name in belts, hose and hydraulics
+Description: Gates Career; Contact Us; Join/Login; Energy, Exploration & Extract
+ion; Infrastructure & Agriculture; Transportation. Automotive. Process & Special
+ty; Products ...
+URL: http://ww2.gates.com/europe/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: NaviGates - Gates Corporation
+Description: Gates high quality belt & hose solutions support your energy, explo
+ration, extraction, infrastructure, agriculture & transportation needs.
+URL: http://navigates.gates.com/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Bill Gates - Forbes
+Description: Bill Gates is once again the richest person on the planet, a title
+he's held for 16 out of the last 21 years. He recaptured the top spot in March 2
+014 after a four ...
+URL: http://www.forbes.com/profile/bill-gates/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+Precision: 0.3
+
+
+ROUND 2:
+Query : ['bill', 'gates', 'top']
+
+=============================================================
+Title: Bill Gates Repeats at Top of Forbes' List of Billionaires ...
+Description: The world's richest person got even richer this year. Forbes says t
+hat Bill Gates's net worth rose to $79.2 billion in 2015 from $76 billion last y
+ear.
+URL: http://abcnews.go.com/Business/wireStory/bill-gates-repeats-top-forbes-list
+-billionaires-29322263
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates - Forbes - Information for the World's Business ...
+Description: Bill Gates is once again the richest person on the planet, a title
+he's held for 16 out of the last 21 years. He recaptured the top spot in March 2
+014 after a four ...
+URL: http://www.forbes.com/profile/bill-gates/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Home | Bill Gates
+Description: The blog of Bill Gates. gates notes. The blog of Bill Gates. ... Ab
+out Bill. All Posts. Follow. Like. Subscribe. ... Top five things I read in 2014
+.
+URL: http://www.gatesnotes.com/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates: My 13 favorite talks | Playlist | TED.com
+Description: Bill Gates: My 13 favorite talks When we asked Bill Gates to curate
+ a list of his favorite talks, his first response was, ΓÇ£There are too many to
+pick, really.ΓÇ¥
+URL: http://www.ted.com/playlists/35/bill_gates_my_13_favorite_tal
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates still world's richest man, Forbes says ...
+Description: Billionaire philanthropist Bill Gates kept his spot as the world's
+richest man for the second consecutive year, Forbes magazine said Monday. He has
+ topped the
+URL: http://business.inquirer.net/187717/bill-gates-still-worlds-richest-man-for
+bes-says
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates repeats at top of ForbesΓÇÖ list of ...
+Description: NEW YORK (AP) ΓÇö The worldΓÇÖs richest person got even richer this
+ year. Forbes says that Bill GatesΓÇÖs net worth rose to $79.2 billion in 2015 f
+rom $76 ...
+URL: http://www.seattletimes.com/business/bill-gates-repeats-at-top-of-forbes-li
+st-of-billionaires/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates | Bill & Melinda Gates Foundation Trust ...
+Description: Bill Gates's Profile: Bill Gates is one of the smartest businessmen
+ in the world. He founded Microsoft and grew it to the world's largest software
+maker and ...
+URL: http://www.gurufocus.com/StockBuy.php?GuruName=Bill+Gates
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates top giver in 2014 - Stock Markets, Business ...
+Description: America's 50 top givers in 2014 donated $9.8 billion to charity, up
+ 27.5 percent from the top 50 gifts in 2013, according to a new report. Bill Gat
+es was the top ...
+URL: http://www.cnbc.com/id/102409117
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Bill Gates News - The New York Times
+Description: News about Bill Gates. Commentary and archival information about Bi
+ll Gates from The New York Times.
+URL: http://topics.nytimes.com/top/reference/timestopics/people/g/bill_gates/ind
+ex.html
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Top 10 Business Lessons from Bill Gates - How To Make ...
+Description: Bill Gates dropped out of Harvard in 1974. In I975, he co-founded M
+icrosoft ΓÇô a computer software company that would eventually make Gates the wo
+rldΓÇÖs wealthiest man.
+URL: http://www.incomediary.com/top-10-business-lessons-from-bill-gates
+=============================================================
+Is it relevant? (y/n) :y
+
+
+Precision: 1.0
+[u'top', u'bill', 'gates', u'billion', u'richest']

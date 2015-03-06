@@ -1,24 +1,12 @@
 __author__ = 'meril'
 
 import math
-#from Demo import *
 
 class Weights:
-
-    # def __init__(self):
-    #     self.DescWords = []
-    #     self.DescVector = []
-    #     self.WholeWords = []
-    #     self.WholeVector = []
-    #     self.WeightVector = []
-    #     return
-
 
     def Vector(self, objectList):
         self.words = [] #list of all words in all doc descriptions
         self.desVector = []
-        #wholewords = []
-        #wholevector = []
         for i in range(len(objectList)):
             description = objectList[i][1]
             for w in description:
@@ -31,8 +19,6 @@ class Weights:
                 self.desVector[i][w] = 0
             for w in description:
                 self.desVector[i][w] += 1 #frequency of words in description
-        #wholewords = words
-        #wholevector = desVector
         return (self.words, self.desVector)
 
 
@@ -60,10 +46,4 @@ class Weights:
             sum = math.sqrt(sum)
             for t in self.words:
                 self.desVector[i][t] /= sum
-        print('self.words is : ', ', '.join(self.words))
-        print(type(self.words))
-        print("==============================")
-        print("WeightV values are: ")
-        print(self.WeightV)
-        print(type(self.WeightV))
         return (self.words, self.WeightV)

@@ -1,0 +1,248 @@
+Enter the list of query words :musk
+Enter the precision desired (between 0 and 1): 0.9
+ROUND 1:
+
+
+=============================================================
+Title: Musk - Wikipedia, the free encyclopedia
+Description: Musk is a class of aromatic substances commonly used as base notes
+in perfumery. They include glandular secretions from animals such as the musk de
+er, numerous plants ...
+URL: http://en.wikipedia.org/wiki/Musk
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Elon Musk - Wikipedia, the free encyclopedia
+Description: Elon Reeve Musk (born June 28, 1971) is a South Africa-born, Canadi
+an-American entrepreneur, engineer, inventor and investor. He is the CEO and CTO
+ of ...
+URL: http://en.wikipedia.org/wiki/Elon_Musk
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Musk | Define Musk at Dictionary.com
+Description: The freezer case was full of curious meats: a snowy hunk of a fin w
+hale's throat, a slab of musk ox. The resulting molecule is similar in shape and
+ smell to the musk ...
+URL: http://dictionary.reference.com/browse/musk
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Musk perfume ingredient, Musk fragrance and essential oils ...
+Description: Musk is a whole class of fragrant substances used as base notes in
+perfumery. This wonderful animalistic note creates a groundwork on which the res
+t of the aromatic ...
+URL: http://www.fragrantica.com/notes/Musk-4.html
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Musk - Definition and More from the Free Merriam-Webster ...
+Description: Full Definition of MUSK 1 a : a substance with a penetrating persis
+tent odor obtained from a sac beneath the abdominal skin of the male musk deer a
+nd used as a ...
+URL: http://www.merriam-webster.com/dictionary/musk
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: musk - definition of musk by The Free Dictionary
+Description: musk (m┼¡sk) n. 1. a. A greasy secretion with a powerful odor, prod
+uced in a glandular sac in the abdomen of a male musk deer and used in tradition
+al medicines and ...
+URL: http://www.thefreedictionary.com/musk
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: musk oil | eBay
+Description: Find great deals on eBay for musk oil coty wild musk oil. Shop with
+ confidence.
+URL: http://www.ebay.com/sch/i.html?_nkw=musk+oil
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Amazon.com: perfume musk: Beauty
+Description: ASDM Beverly Hills Egyptian Musk, A Rich, Egyptian Musk With Precio
+us Wood Blends and Floral Top Note., 0.5 Ounce. $25.00 $24.95 ;
+URL: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A3760911%2Ck%3Aperfume%20musk
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: The Original Musk Oil - 1-800-645-5048 - Cooperlabs Skin ...
+Description: The Original Musk Oil. Its ability to excite has been spoken of for
+ centuries. You may not even be aware of its fragrance, but your own body chemis
+try is releasing ...
+URL: http://www.cooperlabs.com/Musk/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: MUSK Gene - GeneCards | MUSK Protein | MUSK Antibody
+Description: Complete information for MUSK gene (protein-coding), muscle, skelet
+al, receptor tyrosine kinase, including: function, proteins, disorders, pathways
+, orthologs, and ...
+URL: http://www.genecards.org/cgi-bin/carddisp.pl?gene=MUSK
+=============================================================
+Is it relevant? (y/n) :n
+
+
+Precision: 0.1
+
+ROUND 2:
+Query : ['born', 'reeve', 'musk']
+
+
+=============================================================
+Title: Elon Musk - Wikipedia, the free encyclopedia
+Description: Elon Reeve Musk (born June 28, 1971) is a South Africa-born, Canadi
+an-American entrepreneur, engineer, inventor and investor. He is the CEO and CTO
+ of ...
+URL: http://en.wikipedia.org/wiki/Elon_Musk
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Elon Musk - IMDb
+Description: Elon Musk was born on June 28, 1971 in Pretoria, South Africa as El
+on Reeve Musk. He is a producer and actor, known for Machete Kills (2013), Reven
+ge of the Electric ...
+URL: http://www.imdb.com/name/nm1907769/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Elon Musk - Birthday and Facts - The Meaning Of The Name
+Description: Elon Musk was born on June 28th. Which stars are celebrating their
+birthday today? Check our Celebrities Birthday Calendar and find out celebrities
+ born on your birthday.
+URL: http://themeaningofthename.com/elon-musk/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Elon Musk-Wibe, Elon Reeve Musk (/╦êi╦Él╔Æn ╦êm╩îsk ...
+Description: Elon Reeve Musk (/╦êi╦Él╔Æn ╦êm╩îsk/; born June 28, 1971) is a Sout
+h Africa-born, Canadian-American entrepreneur, engineer, inventor and investor H
+e is the CEO and ...
+URL: http://www.letswibe.com/wibe/Elon-Musk/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Elon Musk - Biography - IMDb
+Description: Elon Musk was born on June 28, 1971 in Pretoria, South Africa as El
+on Reeve Musk. He is a producer and actor, known for Machete Kills (2013), Reven
+ge of the Electric ...
+URL: http://www.imdb.com/name/nm1907769/bio
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Elon Reeve Musk ΓÇô A legend in the making | celebrities ...
+Description: Elon Reeve Musk was born in South Africa and is a Canadian-American
+ business magnate. He is an inventor and investor. Being an early investor in Sp
+aceX, PayPal, Tesla ...
+URL: http://sylc.info/elon-reeve-musk-legend-making/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Quotes of Elon Musk | QuoteSaga - QuoteSaga - World's ...
+Description: Elon Reeve Musk (/╦êi╦Él╔Æn ╦êm╩îsk/; born June 28, 1971) is a Sout
+h Africa-born, Canadian American business magnate, engineer, and investor He is
+the CEO and CTO of ...
+URL: http://www.quotesaga.com/person/elon-musk/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Episode Fact File: The Musk Who Fell To Earth | The ...
+Description: Elon Reeve Musk (born June 28, 1971) is a South African-born Canadi
+an-American business magnate, inventor, and investor. Elon Musk Elon Musk in The
+ Simpsons Episode ...
+URL: http://tstotopix.me/2015/02/01/episode-fact-files-the-musk-who-fell-to-eart
+h/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Hyperloop Is Coming! Elon Musk's Plan for 760 mph Tube ...
+Description: Elon Reeve Musk is a South Africa-born, Canadian American business
+magnate, engineer and investor. He is the CEO and CTO of SpaceX, CEO and chief p
+roduct architect of ...
+URL: http://www.you2repeat.com/watch/?v=Y-IuaxlFh3w
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Tesla Motors Inc (TSLA), SolarCity Corp (SCTY): 23 Elon ...
+Description: Born Elon Reeve Musk on June 28, 1971, in Pretoria, South Africa to
+ a Canadian-English Maye Musk and South African-born Errol Musk. A playful tweet
+ from ...
+URL: http://beforeitsnews.com/financial-markets/2015/01/tesla-motors-inc-tsla-so
+larcity-corp-scty-23-elon-musk-facts-2810436.html
+=============================================================
+Is it relevant? (y/n) :y
+
+
+Precision: 1.0

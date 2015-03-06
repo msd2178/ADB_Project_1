@@ -1,0 +1,240 @@
+Enter the list of query words :columbia
+Enter the precision desired (between 0 and 1): 0.9
+ROUND 1:
+
+
+=============================================================
+Title: Shop Direct for Jackets, Pants, Shirts & Shoes | Columbia ...
+Description: Shop direct from Columbia Sportswear. Buy Columbia jackets, pants,
+shirts, fleece, shoes, boots & sweaters. Visit our blog, watch videos & meet our
+ athletes.
+URL: http://www.columbia.com/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Columbia University in the City of New York
+Description: Founded in 1754 as King's College by royal charter, it is the oldes
+t institution of higher learning in the State of New York. Located in New York C
+ity and a member of ...
+URL: http://www.columbia.edu/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Colombia - Wikipedia, the free encyclopedia
+Description: Colombia, officially the Republic of Colombia, is a country situate
+d in the northwest of South America, bordered to the northwest by Panama ; to th
+e east by Venezuela ...
+URL: http://en.wikipedia.org/wiki/Colombia
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Columbia - Wikipedia, the free encyclopedia
+Description: Columbia may refer to: Contents 1 Places 1.1 In North America 1.2 E
+lsewhere 1.3 In fiction 2 Companies 2.1 Music and entertainment 2.2 Other 3 Musi
+c 4 People 5 ...
+URL: http://en.wikipedia.org/wiki/Columbia
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: :: Welcome to the City of Columbia ::
+Description: The Columbia City Hall, also known as Old United States Court House
+ and Post Office, was built in 1870.It was listed on the National Register of Hi
+storic Places in 1973.
+URL: http://columbiasc.net/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Home | Columbia Business School
+Description: Columbia Business School brings a global perspective, cutting-edge
+methodology, and the energy of New York City to its MBA, EMBA, Executive Educati
+on, PhD, and MS ...
+URL: http://www8.gsb.columbia.edu/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: City of Columbia, Missouri's Official Government Web Site
+Description: The City of Columbia Missouri's official web site. Perform business
+ transactions, view services, department information, upcoming meetings and even
+ts.
+URL: http://www.gocolumbiamo.com/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: Columbia College | Columbia College
+Description: Columbia College is pleased to share the Columbia College Annual Re
+port 2013ΓÇô2014, which celebrates our studentsΓÇÖ and faculty membersΓÇÖ achiev
+ements, thanks our ...
+URL: http://www.college.columbia.edu/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Business Pages - Opendi Columbia
+Description: Columbia Business Pages - Opendi Columbia offers comprehensive busi
+ness and category searches. Free company listings!
+URL: http://www.columbia-opendi.com/
+=============================================================
+Is it relevant? (y/n) :n
+
+
+
+
+=============================================================
+Title: GoColumbiaLions.comΓÇöOfficial Web Site of Columbia ...
+Description: The Official Online Home of the Columbia Lions, Columbia Athletics,
+ Columbia University, Columbia Lions Official Merchandise, Columbia Lions broadc
+asting
+URL: http://www.gocolumbialions.com/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+Precision: 0.4
+
+ROUND 2:
+Query: ['columbia', 'lions', 'college']
+
+
+=============================================================
+Title: Columbia University Athletics
+Description: The Official Online Home of the Columbia Lions, Columbia Athletics,
+ Columbia University, Columbia Lions Official Merchandise, Columbia Lions broadc
+asting
+URL: http://www.gocolumbialions.com/
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Football - Lions News, Scores, Videos - College ...
+Description: Columbia Lions football scores, news, schedule, players, stats, pho
+tos, rumors, and video highlights on ESPN.com.
+URL: http://espn.go.com/college-football/team/_/id/171/columbia-lions
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Lions - Wikipedia, the free encyclopedia
+Description: The Columbia University Lions are the collective athletic teams and
+ their members from Columbia University, an Ivy League institution in New York C
+ity, United States.
+URL: http://en.wikipedia.org/wiki/Columbia_university_lions
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Men's Basketball - News - GoColumbiaLions.comΓÇöOfficial ...
+Description: The Official Online Home of the Columbia Lions, Columbia Athletics,
+ Columbia University, Columbia Lions Official Merchandise, Columbia Lions broadc
+asting
+URL: http://www.gocolumbialions.com/SportSelect.dbml?SPID=3886
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Men's College Basketball - Lions News, Scores ...
+Description: Columbia Lions basketball scores, news, schedule, players, stats, p
+hotos, rumors, and video highlights on ESPN.com.
+URL: http://espn.go.com/mens-college-basketball/team/_/id/171/columbia-lions
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Lions Schedule - NCAA College Football ...
+Description: Columbia Lions college football schedule at CBSSports.com.
+URL: http://www.cbssports.com/collegefootball/teams/schedule/CLMB/columbia-lions
+
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Lions - NCAA Basketball - CBSSports.com
+Description: Complete Columbia Lions NCAA Basketball Coverage at CBSSports.com.
+URL: http://www.cbssports.com/collegebasketball/teams/page/CLMB/columbia-lions
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Lions Football | Central High School | Columbia ...
+Description: Columbia Central High School Lions Football Home
+URL: http://columbialionsfootball.com/Home.html
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Lions Basketball News, Schedule, Roster, Stats
+Description: What we liked and what we think still needs work after UConn's win
+over Columbia in Bridgeport.
+URL: http://www.sbnation.com/college-basketball/teams/columbia-lions
+=============================================================
+Is it relevant? (y/n) :y
+
+
+
+
+=============================================================
+Title: Columbia Lions football - Wikipedia, the free encyclopedia
+Description: The Columbia Lions football program is the intercollegiate American
+ football team for Columbia University located in the U.S. state of New York. Th
+e team competes in ...
+URL: http://en.wikipedia.org/wiki/Columbia_Lions_football
+=============================================================
+Is it relevant? (y/n) :y
+
+
+Precision: 1.0
+[u'college', u'columbia', u'lions', u'official', u'university']

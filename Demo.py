@@ -6,7 +6,6 @@ import base64
 import re
 import json
 import MyRocchio
-from porter2 import stem
 
 def cleanData(str):
         newStr = re.sub(ur"[\,\|\-\?\[\]\{\}\(\)\"\:\;\!\@\#\$\ %\^\&\*\>\<]|(\.$)|(\.\.\.)", ' ', str)
@@ -15,9 +14,7 @@ def cleanData(str):
         for eachWord in wordsList:
             if eachWord not in cachedStopWords:
                 newWordList.append(eachWord)
-        # newerWordList = []
-        # for eachWord in newWordList:
-        #     newerWordList.append(stem(eachWord))
+            newWordList = [item for item in newWordList if item.isalpha()] #Remove numeric values from query
         return newWordList
 
 cachedStopWords = ['a', 'able', 'about', 'across', 'after', 'all', 'almost', 'also', 'am', 'among', 'an',
@@ -30,74 +27,210 @@ cachedStopWords = ['a', 'able', 'about', 'across', 'after', 'all', 'almost', 'al
                   'since', 'so', 'some', 'than', 'that', 'the', 'their', 'them', 'then', 'there', 'these',
                   'they', 'this', 'tis', 'to', 'too', 'twas', 'us', 'wants', 'was', 'we', 'were', 'what',
                   'when', 'where', 'which', 'while', 'who', 'whom', 'why', 'will', 'with', 'would', 'yet',
-                  'you', 'your']
+                  'you', 'your', 'age', 'concern', 'about' ,
+                    'above' ,
+                    'after' ,
+                    'again' ,
+                    'against' ,
+                    'all' ,
+                    'am' ,
+                    'an' ,
+                    'and' ,
+                    'any' ,
+                    'are' ,
+                    'aren' ,
+                    'as' ,
+                    'at' ,
+                    'be' ,
+                    'because' ,
+                    'been' ,
+                    'before' ,
+                    'being' ,
+                    'below' ,
+                    'between' ,
+                    'both' ,
+                    'but' ,
+                    'by' ,
+                    'can' ,
+                    'cannot' ,
+                    'could' ,
+                    'couldn' ,
+                    'did' ,
+                    'didn' ,
+                    'do' ,
+                    'does' ,
+                    'doesn' ,
+                    'doing' ,
+                    'don' ,
+                    'down' ,
+                    'during' ,
+                    'each' ,
+                    'few' ,
+                    'for' ,
+                    'from' ,
+                    'further' ,
+                    'had' ,
+                    'hadn' ,
+                    'has' ,
+                    'hasn' ,
+                    'have' ,
+                    'haven' ,
+                    'having' ,
+                    'he' ,
+                    'her' ,
+                    'here' ,
+                    'here' ,
+                    'hers' ,
+                    'herself' ,
+                    'him' ,
+                    'himself' ,
+                    'his' ,
+                    'how' ,
+                    'how' ,
+                    'if' ,
+                    'in' ,
+                    'into' ,
+                    'is' ,
+                    'isn' ,
+                    'it' ,
+                    'its' ,
+                    'itself' ,
+                    'let' ,
+                    'me' ,
+                    'more' ,
+                    'most' ,
+                    'mustn' ,
+                    'my' ,
+                    'myself' ,
+                    'no' ,
+                    'nor' ,
+                    'not' ,
+                    'of' ,
+                    'off' ,
+                    'on' ,
+                    'once' ,
+                    'only' ,
+                    'or' ,
+                    'other' ,
+                    'ought' ,
+                    'our' ,
+                    'ours' ,
+                    'ourselves' ,
+                    'out' ,
+                    'over' ,
+                    'own' ,
+                    'same' ,
+                    'shan' ,
+                    'she' ,
+                    'should' ,
+                    'shouldn' ,
+                    'so' ,
+                    'some' ,
+                    'such' ,
+                    'than' ,
+                    'that' ,
+                    'the' ,
+                    'their' ,
+                    'theirs' ,
+                    'them' ,
+                    'themselves' ,
+                    'then' ,
+                    'there' ,
+                    'these' ,
+                    'they' ,
+                    'this' ,
+                    'those' ,
+                    'through' ,
+                    'to' ,
+                    'too' ,
+                    'under' ,
+                    'until' ,
+                    'up' ,
+                    'using',
+                    'very' ,
+                    'was' ,
+                    'wasn' ,
+                    'we' ,
+                    'were' ,
+                    'weren' ,
+                    'what' ,
+                    'when' ,
+                    'where' ,
+                    'which' ,
+                    'while' ,
+                    'who' ,
+                    'whom' ,
+                    'why' ,
+                    'with' ,
+                    'would' ,
+                    'wouldn' ,
+                    'you' ,
+                    'your' ,
+                    'yours' ,
+                    'yourself' ,
+                    'yourselves' ]
 objectList =[]
-relevance_count = 0.0
-query = raw_input("Enter the list of query words").split(" ")
-print(query)
-queryList = ""
-#print( type(query)   #list
-l = len(query)
-for q in query:
-    queryList += '&Query=%27' + q # CHECK QUERY FOR 1ST PARAMETER
-print( queryList)
-desired_precision = float (raw_input("Enter the precision desired"))
-print( desired_precision)
-#print( type(desired_precision)
+precision = 0.0
+count = 1
+query = raw_input("Enter the list of query words :").split(" ")
+desired_precision = float (raw_input("Enter the precision desired (between 0 and 1): "))
 
-bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27'+ queryList +'%27&$top=10&$format=Json'
-print( bingUrl)
-#Provide your account key here
-accountKey = ''
+while precision < desired_precision:
+    print("ROUND " + str(count) + ":")
+    count = count + 1
+    queryList = ''
+    relevance_count = 0.0
+    # Build query list
+    for q in query:
+        queryList += q + " "
 
-accountKeyEnc = base64.b64encode(accountKey + ':' + accountKey)
-headers = {'Authorization': 'Basic ' + accountKeyEnc}
-req = urllib2.Request(bingUrl, headers = headers)
-response = urllib2.urlopen(req)
-#content = response.read()
-#content contains the xml/json response from Bing.
-#print( content
-#print( type(content)
-json_obj = json.load(response)
-result_list = json_obj['d']['results']
-#print( json_obj
-#print( type(json_obj)
-#print( "dict['Name']: ", dict['Name'];
-l=  len(result_list)
-print( l)
-for x in range(0,l):
-    result_list[x]['Relevant'] = False
-    print( "The entry number", x+1, "is :")
-    print( "Title is :", result_list[x]['Title'])
-    print( "Description is : ", result_list[x]['Description'])
-    print( "URL is : ", result_list[x]['Url'])
-    ans = raw_input("Is it relevant? (y/n)")
-    if ans == 'y':
-        relevance_count += 1
-        result_list[x]['Relevant'] = True
-    Clean_title = cleanData(result_list[x]['Title'])
-    Clean_description = cleanData(result_list[x]['Description'])
-    Relevant = result_list[x]['Relevant']
-    object = [Clean_title, Clean_description, Relevant]
-    objectList.append(object)
-    print( 'Clean_title is : ', ', '.join(Clean_title))
-    print( 'Clean_description is : ', ', '.join(Clean_description))
-    print( objectList)
-    print( type(objectList))
-    #object.title = Clean_title
-    #object.description = Clean_description
-    #print( object
+    queryList=urllib2.quote(queryList)
 
+    # Query bing search api
+    bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27'+ queryList +'%27&$top=10&$format=Json'
 
-print(relevance_count)
+    accountKey = 'Amj5zEym/93UZqhYv2TvvO9pgzU1mcewT7NNWAm9JMY' # Provide your account key here
+    accountKeyEnc = base64.b64encode(accountKey + ':' + accountKey)
+    headers = {'Authorization': 'Basic ' + accountKeyEnc}
+    req = urllib2.Request(bingUrl, headers = headers)
+    response = urllib2.urlopen(req)
+    json_obj = json.load(response)
+    result_list = json_obj['d']['results']
+    resultCount = len(result_list)
 
-precision = relevance_count/10.0
-print( precision)
+    if resultCount > 0:
+        # Add title and summary from results to a list
+        for x in range(0,resultCount):
 
-print( "==============CALLING WEIGHTS FUNCTION ==============")
-if (precision < desired_precision):
-    obj = Weights.Weights()
-    (terms, weights) = obj.Weight(objectList)
-    rocObject = MyRocchio.Rocchio()
-    newQuery= rocObject.RocchioExpansion(query,objectList, terms, weights)
-    print(newQuery)
+            result_list[x]['Relevant'] = False
+            print "\n"
+            print "============================================================="
+            print( "Title: " + result_list[x]['Title'].encode("utf-8"))
+            print( "Description: " + result_list[x]['Description'].encode("utf-8"))
+            print( "URL: " + result_list[x]['Url'].encode("utf-8"))
+            print "============================================================="
+            ans = raw_input("Is it relevant? (y/n) :".encode("utf-8"))
+            print "\n"
+            if ans == 'y':
+                relevance_count += 1
+                result_list[x]['Relevant'] = True
+            Clean_title = cleanData(result_list[x]['Title'])
+            Clean_description = cleanData(result_list[x]['Description'])
+            Relevant = result_list[x]['Relevant']
+            object = [Clean_title, Clean_description, Relevant]
+            objectList.append(object)
+
+        if relevance_count > 0:
+            precision = relevance_count/10
+            print('Precision: '+ str(precision))
+            obj = Weights.Weights()
+            (terms, weights) = obj.Weight(objectList)
+            rocObject = MyRocchio.Rocchio()
+            query= rocObject.RocchioExpansion(query,objectList, terms, weights)
+            print(query)
+        else:
+            print("No relevant results found..Exiting..")
+            break
+    else:
+        print "=======No results found from Bing========="
+        break
