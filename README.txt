@@ -81,5 +81,5 @@ Query Expansion: For the query expansion we have used Rocchio implementation whi
 Ordering of terms: For the ordering of terms we are using bi-gram probability for the sentence. We are currently adding just the bi-gram with maximum probability in the right order. Since we are adding 2 additional keywords after every iteration, addition of 1 bi-gram can slowly expand to a sentence with the right order. We have currently considered this approach rather than adding multiple bi-grams.
 
 
-f) Bing Search Account Key: Amj5zEym/93UZqhYv2TvvO9pgzU1mcewT7NNWAm9JMY
+f) Bing Search Account Key: 
 

@@ -189,7 +189,7 @@ while precision < desired_precision:
     # Query bing search api
     bingUrl = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=%27'+ queryList +'%27&$top=10&$format=Json'
 
-    accountKey = 'Amj5zEym/93UZqhYv2TvvO9pgzU1mcewT7NNWAm9JMY' # Provide your account key here
+    accountKey = '' # Provide your account key here
     accountKeyEnc = base64.b64encode(accountKey + ':' + accountKey)
     headers = {'Authorization': 'Basic ' + accountKeyEnc}
     req = urllib2.Request(bingUrl, headers = headers)
